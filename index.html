@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        // 1.
+        /*let Car  = {
+            Manufacture: 'Audi',
+            Model: 'A 6',
+            Year: 2018,
+            Speed: 120.0
+        }
+        function ShowCar(Car) {
+            return`${Car.Manufacture} ${Car.Model} ${Car.Year} ${Car.Speed}`;
+        }
+        function GetTimeOfTrip(dist, Car) {
+            let time = dist / Car.Speed;
+            if(time > 4) {
+                time += parseInt(time / 4);
+            }
+            return time;
+        }
+        alert(ShowCar(Car));
+        alert('Time of trip:' + GetTimeOfTrip(1000, Car));*/
+        // 2.
+        /*let  Fraction_1 = {
+            num: 1,
+            den: 2
+        }
+        let  Fraction_2 = {
+            num: 1,
+            den: 3
+        }
+        function FractionSum(Fraction_1, Fraction_2) {
+            let den = Fraction_1.den * Fraction_2.den;
+            let  num = Fraction_1.num * Fraction_2.den + Fraction_2.num * Fraction_1.den;
+            return `${num}/${den}`;
+        }
+        function FractionDiff(Fraction_1, Fraction_2) {
+            let den = Fraction_1.den * Fraction_2.den;
+            let  num = Fraction_1.num * Fraction_2.den - Fraction_2.num * Fraction_1.den;
+            return `${num}/${den}`;
+        }
+        function FractionMul(Fraction_1, Fraction_2) {
+            let den = Fraction_1.den * Fraction_2.den;
+            let  num = Fraction_1.num * Fraction_2.num;
+            return `${num}/${den}`;
+        }
+        function FractionDiv(Fraction_1, Fraction_2) {
+            let den = Fraction_2.num * Fraction_1.den;
+            let  num = Fraction_1.num * Fraction_2.den;
+            return `${num}/${den}`;
+        }
+        let Fraction_3 = {
+            num: 3,
+            den: 2
+        }
+        function FractionReduction (Fraction_3) {
+            if(Fraction_3.num > Fraction_3.den) {
+                let int = parseInt(Fraction_3.num / Fraction_3.den);
+                Fraction_3.num %= Fraction_3.den;
+                return `${int} ${Fraction_3.num}/${Fraction_3.den}`;
+            }
+        }
+        alert('Sum:' + FractionSum(Fraction_1, Fraction_2));
+        alert('Diff: ' + FractionDiff(Fraction_1, Fraction_2));
+        alert('Mul' + FractionMul(Fraction_1, Fraction_2));
+        alert('Div: ' + FractionDiv(Fraction_1, Fraction_2));
+        alert('Reduction: ' + FractionReduction(Fraction_3));*/
+        // 3.
+   /*     let time_1 = {
+            h: 11,
+            m: 50,
+            s: 0
+        }
+        function ShowTime(time) {
+            if(time.h == 0) {
+                time.h = '00';
+            }
+            if(time.m == 0)
+                time.m = '00';
+            if(time.s == 0)
+                time.s = '00';
+            return `${time.h}:${time.m}:${time.s}`;
+        }
+        function GetTimePlusSeconds(time, seconds) {
+            let sec = time.h * 3600 + time.m * 60 + time.s + seconds;
+            let time_ = {
+                h: 0,
+                m: 0,
+                s: 0
+            }
+            time_.h = parseInt(sec / 3600);
+            time_.m = parseInt((sec % 3600) / 60);
+            time_.s = (sec % 3600) % 60;
+            return time_;
+        }
+        function GetTimePlusMinutes(time, minutes) {
+            let sec = time.h * 3600 + time.m * 60 + time.s + minutes * 60;
+            let time_ = {
+                h: 0,
+                m: 0,
+                s: 0
+            }
+            time_.h = parseInt(sec / 3600);
+            time_.m = parseInt((sec % 3600) / 60);
+            time_.s = (sec % 3600) % 60;
+            return time_;
+        }
+        function GetTimePlusHours(time, hours) {
+            let sec = time.h * 3600 + time.m * 60 + time.s + hours * 3600;
+            let time_ = {
+                h: 0,
+                m: 0,
+                s: 0
+            }
+            time_.h = parseInt(sec / 3600);
+            time_.m = parseInt((sec % 3600) / 60);
+            time_.s = (sec % 3600) % 60;
+            return time_;
+        }
+        let time_2 = GetTimePlusSeconds(time_1, 10000);
+        let time_3 = GetTimePlusMinutes(time_2, 100);
+        alert(ShowTime(time_1));
+        alert(ShowTime(time_2));
+        alert(ShowTime(time_3));
+        alert(ShowTime(GetTimePlusHours(time_2,1)));*/
+    </script>
+</body>
+</html>
